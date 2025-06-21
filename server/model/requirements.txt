@@ -14,3 +14,5 @@ tensorflow
 opencv-python
 numpy
 keras
+uvicorn
+ngrok
