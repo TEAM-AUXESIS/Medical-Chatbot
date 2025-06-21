@@ -145,8 +145,14 @@ export default function ChatMessages({ messages, isLoading, error, onEmotionChan
     // Set up emotion fetching
     emotionIntervalRef.current = setInterval(() => {
       fetch('https://apparent-wolf-obviously.ngrok-free.app/emotion')
-        .then(response => response.json())
+        .then(response => {response;
+          console.log(response);
+
+        }
+
+        )
         .then(data => {
+
           setEmotion(data.emotion);
           // Pass the emotion up to the parent component
           if (onEmotionChange) {

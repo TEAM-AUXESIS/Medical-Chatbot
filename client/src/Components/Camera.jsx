@@ -11,7 +11,7 @@ const VideoFeed = () => {
         const data = await response.json();
         setEmotion(data.emotion);
       } catch (err) {
-        console.error('Failed to fetch emotion:', err);
+        console.error('Failed to fetch emotion:',response);
       }
     }, 1000);
 
