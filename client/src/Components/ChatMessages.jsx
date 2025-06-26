@@ -214,7 +214,7 @@ export default function ChatMessages({ messages, isLoading, error, onEmotionChan
           padding: '10px'
         }}>
           <img
-            src="https://apparent-wolf-obviously.ngrok-free.app/video_feed"
+            src="http://10.1.110.15:5000/video_feed"
             alt="Video Feed"
             style={{ width: '100%', height: '100%', borderRadius: '8px' }}
           />

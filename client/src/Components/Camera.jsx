@@ -7,7 +7,7 @@ const VideoFeed = () => {
     // Fetch emotion data every second
     const interval = setInterval(async () => {
       try {
-        const response = await fetch('https://apparent-wolf-obviously.ngrok-free.app/emotion');
+        const response = await fetch('http://10.1.110.15:5000/emotion');
         const data = await response.json();
         setEmotion(data.emotion);
       } catch (err) {
@@ -22,7 +22,7 @@ const VideoFeed = () => {
     <div style={{ textAlign: 'center' }}>
       <h2>Live Video Feed</h2>
       <img
-        src="https://apparent-wolf-obviously.ngrok-free.app/video_feed"
+        src="http://10.1.110.15:5000/video_feed"
         alt="Video Feed"
         style={{ border: '2px solid black', width: '500px', height: '400px' }}
       />
